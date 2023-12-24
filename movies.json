@@ -1,0 +1,18 @@
+{
+    "iron_man1":{
+        "year" : 2008,
+        "desc": "When Tony Stark, an industrialist, is captured, he constructs a high-tech armoured suit to escape. Once he manages to escape, he decides to use his suit to fight against evil forces to save the world."
+    },
+    "iron_man2":{
+        "year" : 2010,
+        "desc":"Tony Stark is under pressure from various sources, including the government, to share his technology with the world. He must find a way to fight them while also tackling his other enemies."
+    },
+    "captain_america":{
+        "year" : 2014,
+        "desc" : "Steve Rogers, along with Black Widow and Falcon, must uncover the secrets hidden within S.H.I.E.L.D., while also battling a dangerous new enemy, who is only known as The Winter Soldier."
+    },
+    "endgame":{
+        "year" : 2019,
+        "desc": "After Thanos, an intergalactic warlord, disintegrates half of the universe, the Avengers must reunite and assemble again to reinvigorate their trounced allies and restore balance."
+    }
+}

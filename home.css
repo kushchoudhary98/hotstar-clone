@@ -1,0 +1,340 @@
+body {
+    display: flex;
+    flex-direction: row;
+    background-image: linear-gradient(90deg, #0F1014ff, rgba(15, 16, 20, 0.9), #00000000), url("main_movies/iron_man2.jpg");
+    background-size: 100vw;
+    
+    background-repeat:no-repeat ;
+    transition: background-image 2s;
+}
+
+navbar {
+    position: fixed;
+    margin: 0;
+    width: 91px;
+}
+
+.upper_nav{
+    margin: 0;
+    background-color: #0F1014;
+    height: 110px;
+    width: 91px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 23px;
+    font-size: 13px;
+    text-decoration: none;
+    color: #FFD882;
+    row-gap: 10px;
+}
+
+.sub_button{
+    background-color: #27231D;
+    padding: 6px 10px 6px 10px;
+    border-radius: 12px;
+}
+
+navbar div{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    align-items: center;
+    height: calc(100vh - 110px);
+    min-height: 550px;
+    background-color: #0F1014ff;
+}
+.nav {
+    margin: 0px;
+    border: none;
+    outline: none;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 570px;
+    row-gap: 44px;
+    border-width: 0px;
+    padding-bottom: 114px;
+    padding-top: 90px;
+}
+
+.nav li svg{
+    opacity: 50%;
+    cursor: pointer;
+}
+
+#extended_nav{
+    display: flex;
+    position: fixed;
+    left: 90px;
+    padding-left: 1px;
+    height: calc(100vh);
+    width: 0px;
+    overflow: hidden;
+    color: whitesmoke;
+    background:linear-gradient(90deg, #0F1014ff, rgba(15, 16, 20, 0.9), #00000000);
+    
+    flex-direction: column;
+    justify-content:space-around;
+    min-height: 660px;
+    padding-top: 110px;
+    
+}
+#extended_nav ul{
+    display: none;
+    flex-direction: column;
+    list-style: none;
+    row-gap: 41.8px;
+    text-align: start;
+    padding: 0px;
+    margin-bottom: 17px;
+    text-decoration: solid;
+    font-size: large;
+}
+#extended_nav ul li{
+    position: relative;
+    cursor: pointer;
+}
+
+main {
+    margin: 0px;
+    border: none;
+    outline: none;
+    position: fixed;
+    overflow-y: auto;
+    padding-left: 91px;
+    height: 100vh;
+    width: calc(100vw);
+    overflow-x: hidden;
+    background-image: linear-gradient(90deg, #0F1014ff, rgba(15, 16, 20, 0.9), rgba(15, 16, 20, 0.5),rgba(15, 16, 20, 0.1),#00000000), url("main_movies/iron_man2.jpg");
+    z-index: -1;
+    background-size: 100vw;
+    background-repeat: no-repeat;
+    background-color: #0F1014ff;
+}
+
+#grad{
+    background-color: #00000000;
+}
+
+main::-webkit-scrollbar{
+    display: none;
+}
+
+
+#intro{
+    color: white;
+    font-family:sans-serif;
+    min-height: 400px;
+    height: calc(100vw - 500px);
+    max-height: calc(100vh - 100px);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding-top: 110px;
+}
+
+.show_intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: calc(100vw - 572px);
+    max-height: 320px;
+    min-height: 250px;
+    width: 400px;
+    min-width: 100px;
+    opacity: 85%;
+    
+}
+#curr_show_logo{
+    max-width: 350px;
+    min-width: 200px;
+    width: calc(100vw - 400px);
+}
+#curr_show_specs{
+    width: 400px;
+    min-width: 200px;
+    width: calc(100vw - 400px);
+}
+#curr_show_desc{
+    height: 63px;
+    overflow-y: auto;
+    max-width: 400px;
+    min-width: 200px;
+    width: calc(100vw - 400px);
+    font-size: 14px;
+}
+#curr_show_desc::-webkit-scrollbar{
+    display: none;
+}
+#curr_show_subs{
+    display: flex;
+    justify-content: center;
+    background:linear-gradient(90deg, #ffffff44, #ffffff44);
+    border-radius: 15px;
+    margin-right: 50px;
+}
+#curr_show_subs:hover{
+    background:linear-gradient(90deg, #ffffff55, #ffffff55);
+}
+#curr_show_subs button{
+    display: flex;
+    background: none;
+    border: none;
+    justify-content: center;
+    align-items: center;
+    min-width: 50px;
+    width:calc(100vw - 200px);
+    max-width: 337px;
+    height: 45px;
+    color: white;
+    opacity: 100%;
+}
+
+.swipe-wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: 400px;
+    min-width: 100px;
+    height: 70px;
+    align-items: center;
+    left: 10px;
+    right: 10px;
+    cursor: pointer;
+    padding-top: 40px;
+}
+.swipe-wrapper::-webkit-scrollbar{
+    display: none;
+}
+.swipper-curr {
+    padding-left: 2.5px;
+    padding-right: 2.5px;
+}
+.swipper-slide {
+    padding-left: 2.5px;
+    padding-right: 2.5px;
+}
+.swipper-slide img{
+    border-radius: 10px;
+    opacity: 50%;
+}
+.swipper-slide img:hover {
+    height: 65px;
+    opacity: 100%;
+    transition: all;
+    transition-duration: 0.2s;
+}
+.swipper-curr img{
+    height: 65px;
+    border-radius: 10px;
+    border-style: groove;
+    border-color: whitesmoke;
+    border-width: 1px;
+}
+.swipper-curr img:hover {
+    
+    transition: all;
+    transition-duration: 0.2s;
+}
+.swipe-pre {
+    position: absolute;
+    left: 0;
+    background: linear-gradient(90deg, #0F1114ff, #00000000);
+}
+.swipe-pre button {
+    background: none;
+    border: none;
+    height: 61px;
+    width: 50px;
+    color: white;
+}
+.swipe-next {
+    position: absolute;
+    right: 0;
+    background: linear-gradient(90deg, #00000000, #0F1114ff);
+}
+.swipe-next button {
+    background: none;
+    border: none;
+    height: 61px;
+    width: 50px;
+    color: white;
+}
+.swipe-contents{
+    
+    padding-right: 10px;
+    min-width: 150px;
+    max-width: 394px;
+    width: calc(100vw - 100px);
+    display: flex;
+    flex-direction: row;
+    overflow: scroll;
+}
+.swipe-contents::-webkit-scrollbar{
+    display: none;
+}
+
+.main-body-content div img {
+    max-height: 240px;
+    height: calc(100vw - 650px);
+    min-height: 180px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.main-body-content #content{
+    display: flex;
+    flex-direction: row;
+    overflow-y: scroll;
+    padding-right: 10px;
+    gap: 10px
+}
+.main-body-content #content::-webkit-scrollbar {
+    display: none;
+}
+
+#main_body{
+    background: linear-gradient(0deg,#0F1014ff, rgba(15, 16, 20, 0.807), #00000000);
+    padding-top: 68px;
+}
+.main_swipper{
+    padding-top: 30px;
+}
+#title {
+    color: whitesmoke;
+    font-size: 18px;
+    padding-bottom: 5px;
+}
+
+footer{
+    width: 100%;
+    padding-top: 100px;
+    color: whitesmoke;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: #0F1014;
+    font-weight: bold;
+    justify-content: space-between;
+}
+#footer_box {
+    min-width: 200px;
+    max-width: 200px;
+    height: 130px;
+}
+#footer_box div{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+#footer_box div a{
+    text-decoration: none;
+    color: #8F98B2;
+    font-size: 14px;
+}
+#footer_box #title{
+    padding-bottom: 20px;
+}
