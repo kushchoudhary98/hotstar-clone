@@ -25,7 +25,7 @@ ex_nav.addEventListener("mouseleave", ()=>{
 })
 
 let mov_logo = document.getElementById("curr_show_logo");
-let mov_date = document.getElementById("curr_show_specs");
+let mov_date = document.getElementById("year");
 let mov_desc = document.getElementById("curr_show_desc");
 
 let curr_select = document.getElementsByClassName("swipper-curr")[0];
@@ -41,7 +41,7 @@ function sleep(ms) {
 async function change(t, mk_curr){
     let movie = data[t];
     mov_logo.src = "logo/" + t + ".png";
-    mov_date.innerHTML = movie["year"] + mov_date.innerHTML.slice(5,);
+    mov_date.innerHTML = movie["year"];
     mov_desc.innerHTML = movie["desc"];
     let bckg = "linear-gradient(90deg, #0F1014ff, rgba(15, 16, 20, 0.9), rgba(15, 16, 20, 0.5),rgba(15, 16, 20, 0.1),#00000000), url('main_movies/" + t + ".jpg')"
     console.log(bckg);

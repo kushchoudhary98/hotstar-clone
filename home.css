@@ -223,7 +223,7 @@ main::-webkit-scrollbar{
     opacity: 50%;
 }
 .swipper-slide img:hover {
-    height: 65px;
+    transform: scale(1.05);
     opacity: 100%;
     transition: all;
     transition-duration: 0.2s;
@@ -265,13 +265,14 @@ main::-webkit-scrollbar{
     color: white;
 }
 .swipe-contents{
-    
     padding-right: 10px;
     min-width: 150px;
     max-width: 394px;
     width: calc(100vw - 100px);
+    height: 80px;
     display: flex;
     flex-direction: row;
+    align-items: center;
     overflow: scroll;
 }
 .swipe-contents::-webkit-scrollbar{
