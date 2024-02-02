@@ -240,30 +240,7 @@ main::-webkit-scrollbar{
     transition: all;
     transition-duration: 0.2s;
 }
-.swipe-pre {
-    position: absolute;
-    left: 0;
-    background: linear-gradient(90deg, #0F1114ff, #00000000);
-}
-.swipe-pre button {
-    background: none;
-    border: none;
-    height: 61px;
-    width: 50px;
-    color: white;
-}
-.swipe-next {
-    position: absolute;
-    right: 0;
-    background: linear-gradient(90deg, #00000000, #0F1114ff);
-}
-.swipe-next button {
-    background: none;
-    border: none;
-    height: 61px;
-    width: 50px;
-    color: white;
-}
+
 .swipe-contents{
     padding-right: 10px;
     min-width: 150px;
@@ -273,7 +250,7 @@ main::-webkit-scrollbar{
     display: flex;
     flex-direction: row;
     align-items: center;
-    overflow: scroll;
+    overflow-x: scroll;
 }
 .swipe-contents::-webkit-scrollbar{
     display: none;
@@ -285,13 +262,19 @@ main::-webkit-scrollbar{
     min-height: 180px;
     border-radius: 8px;
     cursor: pointer;
+    transition: all 0.2s;
+}
+.main-body-content div img:hover {
+    transform: scale(1.04);
 }
 .main-body-content #content{
     display: flex;
     flex-direction: row;
+    align-items: center;
     overflow-y: scroll;
     padding-right: 10px;
-    gap: 10px
+    gap: 10px;
+    height: 280px;
 }
 .main-body-content #content::-webkit-scrollbar {
     display: none;
